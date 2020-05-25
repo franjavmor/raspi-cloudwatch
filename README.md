@@ -7,7 +7,7 @@ Usando Raspberry Pi con AWS CloudWatch
  - Sensor DHT22
  - AWS CloudWatch
 
-## Idea
+## Idea
 Adaptación de la guía de Bart Castle llamada *Raspberry Pi monitoring with AWS CloudWatch Dashboard*
 
 Fuente: [Raspberry Pi monitoring with AWS CloudWatch Dashboard](https://www.youtube.com/watch?v=kSZzAairBHo)
