@@ -12,5 +12,5 @@ Adaptación de la guía de Bart Castle llamada *Raspberry Pi monitoring with AWS
 
 Fuente: [Raspberry Pi monitoring with AWS CloudWatch Dashboard](https://www.youtube.com/watch?v=kSZzAairBHo)
 
-## Requerimientos
+## Dependencias
     pip3 install -r requirements.txt
