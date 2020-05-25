@@ -1,0 +1,3 @@
+boto3
+Adafruit_Blinka
+Adafruit_CircuitPython_DHT
