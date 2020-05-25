@@ -12,7 +12,8 @@ humidity = dhtDevice.humidity
 temperature = round(temperature,2)
 humidity = round(humidity,2)
 
-print ('Temperature: ',temperature,', Humidity: ',humidity)
+# If I want to print the output
+# print ('Temperature: ',temperature,', Humidity: ',humidity)
 
 # AWS credentials and region needs to be added
 # Credentials: ~/.aws/credentials
