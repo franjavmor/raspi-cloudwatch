@@ -1,16 +1,20 @@
 import boto3
 import board
 import adafruit_dht
+import socket
 
-# Especifico el PIN 15 (GPIO22)
+# DHT22 using PIN 15 (GPIO22)
 dhtDevice = adafruit_dht.DHT22(board.D22)
 
-# Obtengo los valores de temperatura y humedad
+# Obtaining temperature and humidity
 temperature = dhtDevice.temperature
 humidity = dhtDevice.humidity
 
 temperature = round(temperature,2)
 humidity = round(humidity,2)
+
+# Obtaining hostname
+hostname = socket.gethostname()
 
 # If I want to print the output
 # print ('Temperature: ',temperature,', Humidity: ',humidity)
@@ -25,7 +29,7 @@ cloudwatch = boto3.client('cloudwatch')
 
 # Add temperature metric
 cloudwatch.put_metric_data(
-    Namespace='raspifran',
+    Namespace=hostname,
     MetricData=[
         {
             'MetricName': 'Temperature',
@@ -37,7 +41,7 @@ cloudwatch.put_metric_data(
 
 # Add humidity metric
 cloudwatch.put_metric_data(
-    Namespace='raspifran',
+    Namespace=hostname,
     MetricData=[
         {
             'MetricName': 'Humidity',
