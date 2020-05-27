@@ -1,3 +1,4 @@
-boto3
+RPI.GPIO
 Adafruit_Blinka
 Adafruit_CircuitPython_DHT
+boto3
